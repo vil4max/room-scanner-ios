@@ -2,6 +2,8 @@
 
 Hybrid room capture pet: on-device LiDAR lab plus AI Capture packages processed offline on Mac into a semantic metric mesh you can re-open in Results.
 
+**Org:** [vil4engineering](https://github.com/vil4engineering) · **Repo:** [vil4engineering/room-scanner-ios](https://github.com/vil4engineering/room-scanner-ios)
+
 ## Stack
 
 iOS 18+ · Xcode 16+ · iPhone 15 Pro (LiDAR) · SwiftUI · ARKit · RealityKit · Swift Concurrency · MVVM · Swift Testing · Python 3.11+ pipeline (MPS) · Apple sample asset (`CosmonautSuit_en.reality`)
