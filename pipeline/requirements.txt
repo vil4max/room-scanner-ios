@@ -1,0 +1,9 @@
+numpy>=1.26
+pyyaml>=6.0
+opencv-python-headless>=4.9
+pytest>=8.0
+# Optional heavy deps (install when ready for full AI):
+# torch  # macOS MPS wheels from pytorch.org
+# open3d
+# trimesh
+# pillow

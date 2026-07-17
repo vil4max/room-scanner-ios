@@ -1,0 +1,21 @@
+# Defaults tuned for MacBook M1 Max 64 GB (PyTorch MPS).
+device: mps
+max_views_per_chunk: 32
+keyframes_fps: 1.5
+blur_variance_threshold: 80.0
+voxel_m: 0.015
+tsdf_voxel_m: 0.02
+geometry_backend: auto
+semantics_backend: vote
+concepts:
+  - wall
+  - floor
+  - ceiling
+  - door
+  - window
+  - furniture
+exports:
+  - ply
+  - obj
+  - glb
+  - usdz

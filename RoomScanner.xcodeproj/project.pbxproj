@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E99A2C17E72B4CD0B5443CA9 /* CapturePackageMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3A7A5BFF724B84A198CF76 /* CapturePackageMetadata.swift */; };
+		666FCCAEBEBC4399A8722BF0 /* CapturePackageExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB0EE898E7B4AB3B5473BB3 /* CapturePackageExporter.swift */; };
+		9507699E063B42A3A41D0558 /* ModelImportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCE23C925344A7A876C0B79 /* ModelImportService.swift */; };
+		E30FDD6B284E41AC9EF21414 /* AICaptureRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA9DCF7A1FD49598113B8EE /* AICaptureRecorder.swift */; };
+		D664E8F5C86448D1A567C1E7 /* CaptureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B4BD05EBCE4C76A66082CC /* CaptureViewModel.swift */; };
+		F38F562F992B462C82362FD5 /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94545D9EF6B34AE4B0FE41F2 /* CaptureView.swift */; };
+		9E3EBDE695EA4C7B96871379 /* AIResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDB58E669DD43C1A69A0E4D /* AIResultViewModel.swift */; };
+		8131314C396A4F8582442D0B /* AIResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051C5772DED4859A2EC86FC /* AIResultView.swift */; };
+		8AE5DA03AA6F48FE9A64D1E7 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ABBB8A459C46DF81AA16F2 /* RootTabView.swift */; };
+		9C6B6FFE36374B33BF1C2FFB /* CapturePackageExporterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BFCFB7CE0B43DD821BBA0B /* CapturePackageExporterTests.swift */; };
+		54EFD1F9FE384CFDBDFFA5FE /* ModelImportServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED51178FE70434DB1BFB3EB /* ModelImportServiceTests.swift */; };
 		0285717BF5ADBD7EB1D53BCF /* ScanQualityEvaluatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56209770DBE004282CD28B88 /* ScanQualityEvaluatorTests.swift */; };
 		05C87460E8F28C794D4B0F5A /* ScanStatusBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E60C31AB00E7B918D2904 /* ScanStatusBanner.swift */; };
 		19DD53381E08D64EBAEB4A5D /* MetricCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C414711F49D42384B30B50A3 /* MetricCard.swift */; };
@@ -47,6 +58,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B3A7A5BFF724B84A198CF76 /* CapturePackageMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturePackageMetadata.swift; sourceTree = "<group>"; };
+		8BB0EE898E7B4AB3B5473BB3 /* CapturePackageExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturePackageExporter.swift; sourceTree = "<group>"; };
+		6BCE23C925344A7A876C0B79 /* ModelImportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelImportService.swift; sourceTree = "<group>"; };
+		DFA9DCF7A1FD49598113B8EE /* AICaptureRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AICaptureRecorder.swift; sourceTree = "<group>"; };
+		51B4BD05EBCE4C76A66082CC /* CaptureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewModel.swift; sourceTree = "<group>"; };
+		94545D9EF6B34AE4B0FE41F2 /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
+		3BDB58E669DD43C1A69A0E4D /* AIResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIResultViewModel.swift; sourceTree = "<group>"; };
+		5051C5772DED4859A2EC86FC /* AIResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIResultView.swift; sourceTree = "<group>"; };
+		D4ABBB8A459C46DF81AA16F2 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		43BFCFB7CE0B43DD821BBA0B /* CapturePackageExporterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturePackageExporterTests.swift; sourceTree = "<group>"; };
+		4ED51178FE70434DB1BFB3EB /* ModelImportServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelImportServiceTests.swift; sourceTree = "<group>"; };
 		093F5DB0A91F412092DF6ABE /* ScanMetricsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanMetricsService.swift; sourceTree = "<group>"; };
 		13F19BFA22B1CF1DDB34AEC4 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		16762F04AFCA6D311280D313 /* ScanSessionStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanSessionStoreTests.swift; sourceTree = "<group>"; };
@@ -91,6 +113,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F15733D6A43A42C1BE0B17DC /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				51B4BD05EBCE4C76A66082CC /* CaptureViewModel.swift */,
+				94545D9EF6B34AE4B0FE41F2 /* CaptureView.swift */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
+		7FED63814C61443CB3BDCAA9 /* AIResult */ = {
+			isa = PBXGroup;
+			children = (
+				3BDB58E669DD43C1A69A0E4D /* AIResultViewModel.swift */,
+				5051C5772DED4859A2EC86FC /* AIResultView.swift */,
+			);
+			path = AIResult;
+			sourceTree = "<group>";
+		};
+		274AF3061CBD4EEE8E8DFD4A /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				D4ABBB8A459C46DF81AA16F2 /* RootTabView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		27A1D608FBEF026B613317E7 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +177,10 @@
 		3E40AE5D3783C19115CB020D /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				7FED63814C61443CB3BDCAA9 /* AIResult */,
+				F15733D6A43A42C1BE0B17DC /* Capture */,
 				27A59CAF71CCFFF51596522E /* History */,
+				274AF3061CBD4EEE8E8DFD4A /* Root */,
 				EADEFB3B8D93D1CFE3BDE200 /* Scan */,
 			);
 			path = Features;
@@ -180,6 +231,8 @@
 		67CC38AFC744194C6B1EB54A /* RoomScannerTests */ = {
 			isa = PBXGroup;
 			children = (
+				43BFCFB7CE0B43DD821BBA0B /* CapturePackageExporterTests.swift */,
+				4ED51178FE70434DB1BFB3EB /* ModelImportServiceTests.swift */,
 				7A27F3F2EB1651D59C88F006 /* FinishScanTests.swift */,
 				3DA37F2A16201734B7E8918C /* ScanGuidanceEvaluatorTests.swift */,
 				348988C3580342DE9E3987D4 /* ScanMetricsServiceTests.swift */,
@@ -192,6 +245,7 @@
 		6BF9CABC5A0AAD82C9D65683 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2B3A7A5BFF724B84A198CF76 /* CapturePackageMetadata.swift */,
 				E84665A44858503F0503F941 /* ScanMetricsFormatter.swift */,
 				9A1C28A9B0047D8FB4E8BED0 /* ScanModels.swift */,
 			);
@@ -209,6 +263,9 @@
 		99FB165A6F68C70B0C48F5B0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8BB0EE898E7B4AB3B5473BB3 /* CapturePackageExporter.swift */,
+				6BCE23C925344A7A876C0B79 /* ModelImportService.swift */,
+				DFA9DCF7A1FD49598113B8EE /* AICaptureRecorder.swift */,
 				9C118A7E1B974B44863DDC0E /* ARSessionService.swift */,
 				4177C485D213D0A4D2E73DAF /* ScanSessionStore.swift */,
 				093F5DB0A91F412092DF6ABE /* ScanMetricsService.swift */,
@@ -353,6 +410,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C6B6FFE36374B33BF1C2FFB /* CapturePackageExporterTests.swift in Sources */,
+				54EFD1F9FE384CFDBDFFA5FE /* ModelImportServiceTests.swift in Sources */,
 				87C7FF17CA832F43DDA95A51 /* FinishScanTests.swift in Sources */,
 				97529CC168DC77D60E302AD5 /* ScanGuidanceEvaluatorTests.swift in Sources */,
 				0285717BF5ADBD7EB1D53BCF /* ScanQualityEvaluatorTests.swift in Sources */,
@@ -365,6 +424,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E99A2C17E72B4CD0B5443CA9 /* CapturePackageMetadata.swift in Sources */,
+				666FCCAEBEBC4399A8722BF0 /* CapturePackageExporter.swift in Sources */,
+				9507699E063B42A3A41D0558 /* ModelImportService.swift in Sources */,
+				E30FDD6B284E41AC9EF21414 /* AICaptureRecorder.swift in Sources */,
+				D664E8F5C86448D1A567C1E7 /* CaptureViewModel.swift in Sources */,
+				F38F562F992B462C82362FD5 /* CaptureView.swift in Sources */,
+				9E3EBDE695EA4C7B96871379 /* AIResultViewModel.swift in Sources */,
+				8131314C396A4F8582442D0B /* AIResultView.swift in Sources */,
+				8AE5DA03AA6F48FE9A64D1E7 /* RootTabView.swift in Sources */,
 				B73E114E3FBCA7A568AEC7BC /* AppDependencies.swift in Sources */,
 				19DD53381E08D64EBAEB4A5D /* MetricCard.swift in Sources */,
 				5BB7C718F1A25F0FFDCA27CC /* RoomScannerApp.swift in Sources */,
@@ -410,7 +478,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = RoomScanner;
-				INFOPLIST_KEY_NSCameraUsageDescription = "RoomScanner needs camera access to capture room geometry and track scan quality.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "RoomScanner needs camera access for LiDAR scan lab and AI Capture walkthroughs.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -455,7 +523,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = RoomScanner;
-				INFOPLIST_KEY_NSCameraUsageDescription = "RoomScanner needs camera access to capture room geometry and track scan quality.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "RoomScanner needs camera access for LiDAR scan lab and AI Capture walkthroughs.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

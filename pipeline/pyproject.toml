@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "room-pipeline"
+version = "0.1.0"
+description = "Hybrid RoomScanner offline pipeline: frames → metric semantic mesh"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "pyyaml>=6.0",
+    "opencv-python-headless>=4.9",
+]
+
+[project.optional-dependencies]
+mesh = ["open3d", "trimesh"]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["room_pipeline*"]
+
+[tool.setuptools]
+packages = ["room_pipeline"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

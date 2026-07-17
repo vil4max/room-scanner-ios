@@ -1,10 +1,10 @@
 # RoomScanner
 
-Frozen technical demo for hands-on exploration of ARKit LiDAR mesh capture, RealityKit placement with depth occlusion, and scan metrics on Pro hardware. Learning goals are met; the repo is a reference snapshot, not an active product.
+Hybrid room capture pet: on-device LiDAR lab plus AI Capture packages processed offline on Mac into a semantic metric mesh you can re-open in Results.
 
 ## Stack
 
-iOS 18+ · Xcode 16+ · LiDAR iPhone required · SwiftUI · ARKit · RealityKit · Swift Concurrency · MVVM · Swift Testing · Apple sample asset (`CosmonautSuit_en.reality`)
+iOS 18+ · Xcode 16+ · iPhone 15 Pro (LiDAR) · SwiftUI · ARKit · RealityKit · Swift Concurrency · MVVM · Swift Testing · Python 3.11+ pipeline (MPS) · Apple sample asset (`CosmonautSuit_en.reality`)
 
 ## Screenshots
 
