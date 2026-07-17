@@ -1,6 +1,6 @@
 import ARKit
-import Testing
 @testable import RoomScanner
+import Testing
 
 struct ScanMetricsServiceTests {
     @Test func mapsNormalTracking() {

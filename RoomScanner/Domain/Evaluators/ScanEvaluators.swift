@@ -1,6 +1,6 @@
 import Foundation
 
-enum ScanGuidance: Equatable, Sendable {
+enum ScanGuidance: Equatable {
     case moveDevice
     case trackingLimited
 }

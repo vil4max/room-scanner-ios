@@ -1,7 +1,7 @@
 import ARKit
 import Foundation
 
-struct ScanMetricsFramePayload: Sendable {
+struct ScanMetricsFramePayload {
     let featurePointCount: Int
     let anchorCount: Int
     let meshElementCount: Int
@@ -80,7 +80,7 @@ enum ScanMetricsService {
             return .notAvailable
         case .normal:
             return .normal
-        case .limited(let reason):
+        case let .limited(reason):
             switch reason {
             case .excessiveMotion:
                 return .limitedExcessiveMotion

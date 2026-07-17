@@ -1,11 +1,11 @@
 import Foundation
 
-struct FinishScanResult: Sendable, Equatable {
+struct FinishScanResult: Equatable {
     let session: ScanSession
     let requiresQualityConfirmation: Bool
 }
 
-struct FinishScan: Sendable {
+struct FinishScan {
     private let store: any ScanSessionStoring
 
     init(store: any ScanSessionStoring) {
@@ -31,7 +31,7 @@ struct FinishScan: Sendable {
     }
 }
 
-struct LoadScanHistory: Sendable {
+struct LoadScanHistory {
     private let store: any ScanSessionStoring
 
     init(store: any ScanSessionStoring) {

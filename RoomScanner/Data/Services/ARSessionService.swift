@@ -30,7 +30,7 @@ final class ARSessionService: NSObject, ARSessionProviding {
     override init() {
         super.init()
         session.delegate = self
-        CaptureLog.session.info("ARSessionService initialized meshSupported=\(self.meshReconstructionEnabled)")
+        CaptureLog.session.info("ARSessionService initialized meshSupported=\(meshReconstructionEnabled)")
     }
 
     func setMetricsHandler(_ handler: @escaping (ScanMetricsSnapshot) -> Void) {
@@ -82,7 +82,7 @@ final class ARSessionService: NSObject, ARSessionProviding {
         let options: ARSession.RunOptions = reset ? [.resetTracking, .removeExistingAnchors] : []
         session.run(configuration, options: options)
         CaptureLog.session.debug(
-            "ARConfiguration planes=horizontal,vertical mesh=\(self.meshReconstructionEnabled) reset=\(reset)"
+            "ARConfiguration planes=horizontal,vertical mesh=\(meshReconstructionEnabled) reset=\(reset)"
         )
     }
 
@@ -114,27 +114,27 @@ final class ARSessionService: NSObject, ARSessionProviding {
 }
 
 extension ARSessionService: ARSessionDelegate {
-    nonisolated func session(_ session: ARSession, didUpdate frame: ARFrame) {
+    nonisolated func session(_: ARSession, didUpdate frame: ARFrame) {
         let payload = ScanMetricsFramePayload(frame: frame)
         Task { @MainActor [weak self] in
             self?.deliverMetrics(from: payload)
         }
     }
 
-    nonisolated func session(_ session: ARSession, cameraDidChangeTrackingState camera: ARCamera) {
+    nonisolated func session(_: ARSession, cameraDidChangeTrackingState camera: ARCamera) {
         let kind = ScanMetricsService.trackingKind(for: camera.trackingState)
         Task { @MainActor [weak self] in
             self?.logTrackingChangeIfNeeded(kind)
         }
     }
 
-    nonisolated func sessionWasInterrupted(_ session: ARSession) {
+    nonisolated func sessionWasInterrupted(_: ARSession) {
         Task { @MainActor in
             CaptureLog.session.error("ARSession interrupted")
         }
     }
 
-    nonisolated func sessionInterruptionEnded(_ session: ARSession) {
+    nonisolated func sessionInterruptionEnded(_: ARSession) {
         Task { @MainActor [weak self] in
             guard let self else { return }
             CaptureLog.session.notice("ARSession interruption ended")
@@ -143,13 +143,13 @@ extension ARSessionService: ARSessionDelegate {
         }
     }
 
-    nonisolated func session(_ session: ARSession, didFailWithError error: Error) {
+    nonisolated func session(_: ARSession, didFailWithError error: Error) {
         Task { @MainActor in
             CaptureLog.session.error("ARSession failed error=\(error.localizedDescription)")
         }
     }
 
-    nonisolated func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
+    nonisolated func session(_: ARSession, didAdd anchors: [ARAnchor]) {
         let meshCount = anchors.filter { $0 is ARMeshAnchor }.count
         let planeCount = anchors.filter { $0 is ARPlaneAnchor }.count
         guard meshCount > 0 || planeCount > 0 else { return }

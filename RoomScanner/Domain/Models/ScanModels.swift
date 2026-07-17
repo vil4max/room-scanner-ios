@@ -1,12 +1,12 @@
 import Foundation
 
-enum ScanQuality: String, Codable, Sendable, CaseIterable {
+enum ScanQuality: String, Codable, CaseIterable {
     case poor
     case fair
     case good
 }
 
-struct ScanSession: Codable, Identifiable, Sendable, Equatable {
+struct ScanSession: Codable, Identifiable, Equatable {
     let id: UUID
     let createdAt: Date
     let duration: TimeInterval
@@ -71,7 +71,7 @@ struct ScanSession: Codable, Identifiable, Sendable, Equatable {
     }
 }
 
-enum TrackingStateKind: String, Sendable, Equatable {
+enum TrackingStateKind: String, Equatable {
     case notAvailable
     case normal
     case limitedExcessiveMotion
@@ -81,7 +81,7 @@ enum TrackingStateKind: String, Sendable, Equatable {
     case limitedOther
 }
 
-struct ScanMetricsSnapshot: Sendable, Equatable {
+struct ScanMetricsSnapshot: Equatable {
     let duration: TimeInterval
     let featurePointCount: Int
     let anchorCount: Int
