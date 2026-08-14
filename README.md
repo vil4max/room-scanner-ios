@@ -2,7 +2,7 @@
 
 Hybrid room capture pet: on-device LiDAR lab plus AI Capture packages processed offline on Mac into a semantic metric mesh you can re-open in Results.
 
-**Org:** [vil4engineering](https://github.com/vil4engineering) · **Repo:** [vil4engineering/room-scanner-ios](https://github.com/vil4engineering/room-scanner-ios)
+**Org:** [vil4labs](https://github.com/vil4labs) · **Repo:** [vil4labs/room-scanner-ios](https://github.com/vil4labs/room-scanner-ios)
 
 ## Stack
 
